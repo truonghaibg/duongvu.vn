@@ -5,12 +5,18 @@ use Illuminate\Database\Seeder;
 class DatabaseSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(MenuTypeSeeder::class);
+        $this->call(MenuSeeder::class);
+        $this->call(GenderSeeder::class);
+        $this->call(ColorSeeder::class);
+        //$this->call(NewsTypeSeeder::class);
+        $this->call(RoleSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }
